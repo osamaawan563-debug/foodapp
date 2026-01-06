@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Hungry Menu"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- ======================== ITEM 1: ZINGER BURGER ======================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FF0000"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/zinger"
+                android:scaleType="centerCrop"
+                android:contentDescription="Zinger Burger" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zinger Burger"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crispy chicken burger with sauce"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: Rs 500"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="6dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/minus1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="−" />
+
+                <TextView
+                    android:id="@+id/count1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/plus1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ======================== ITEM 2: CHEESE PIZZA ======================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FF0000"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/pizza"
+                android:scaleType="centerCrop"
+                android:contentDescription="Cheese Pizza" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cheese Pizza"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hot cheesy pizza with toppings"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: Rs 1200"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="6dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/minus2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="−" />
+
+                <TextView
+                    android:id="@+id/count2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/plus2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ======================== ITEM 3: ICE CREAM ======================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FF0000"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/ice_cream"
+                android:scaleType="centerCrop"
+                android:contentDescription="Ice Cream" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ice Cream"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sweet creamy ice cream"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/price3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: Rs 250"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="6dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/minus3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="−" />
+
+                <TextView
+                    android:id="@+id/count3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/plus3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ======================== ITEM 4: NUGGETS ======================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FF0000"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/nuggets"
+                android:scaleType="centerCrop"
+                android:contentDescription="Chicken Nuggets" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chicken Nuggets"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crispy golden nuggets"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/price4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: Rs 400"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="6dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/minus4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="−" />
+
+                <TextView
+                    android:id="@+id/count4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/plus4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ======================== ITEM 5: BROST/SANDWICH ======================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FF0000"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/chicken_brost"
+                android:scaleType="centerCrop"
+                android:contentDescription="Brost" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brost"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fresh Brost"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/price5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: Rs 350"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="6dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/minus5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="−" />
+
+                <TextView
+                    android:id="@+id/count5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/plus5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ======================== ITEM 6: FRENCH FRIES ======================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FF0000"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/fries"
+                android:scaleType="centerCrop"
+                android:contentDescription="French Fries" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="French Fries"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crispy golden fries"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/price6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: Rs 200"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="6dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/minus6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="−" />
+
+                <TextView
+                    android:id="@+id/count6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/plus6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ======================== ITEM 7: SOFT DRINK ======================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FF0000"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/cold_drinks"
+                android:scaleType="centerCrop"
+                android:contentDescription="Soft Drink" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soft Drink"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refreshing cold drink"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/price7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: Rs 150"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="6dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/minus7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="−" />
+
+                <TextView
+                    android:id="@+id/count7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/plus7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ======================== CONFIRM ORDER BUTTON ======================== -->
+        <Button
+            android:id="@+id/btnConfirmOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Order"
+            android:background="#FF0000"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ======================== LOGOUT BUTTON ======================== -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:background="#FF0000"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>
